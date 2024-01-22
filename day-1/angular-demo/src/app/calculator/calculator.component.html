@@ -1,0 +1,10 @@
+<h1>Basic Calculator </h1>
+<input type="number" #input1 (keydown)="getValue1(input1.value)"/>
+<input type="number" #input2 (input)="getValue2(input2.value)"/>
+<br>
+<button (click)="getOp('+')">+</button>
+<button (click)="getOp('-')">-</button>
+<button (click)="getOp('/')">/</button>
+<button (click)="getOp('%')">%</button>
+<button (click)="calculate()">Calculate</button>
+<p>{{formula}} {{op}} {{result}}</p>

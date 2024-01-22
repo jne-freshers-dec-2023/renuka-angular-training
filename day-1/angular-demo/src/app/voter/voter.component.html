@@ -1,0 +1,14 @@
+<h1>Vote here!!</h1>
+<br>
+<input type="text" #age (input)=getAge(age.value)/>
+<br>
+<button (click)="isValidVoter()" >Check eligible</button>
+
+<ng-template #ifBlock>
+    <h1>you are eligible to Vote!!!</h1>
+</ng-template>
+
+<ng-template #elseBlock >
+    <h1>you are not eligible to Vote!!!</h1>
+</ng-template> 
+<p *ngIf="eligible; then ifBlock else elseBlock" ></p>  
