@@ -1,0 +1,8 @@
+<h3>{{title}}</h3>
+<ul *ngFor="let student of students">
+    <li>{{student.name}}</li>
+    <li>{{student.phone}}</li>
+    <ul *ngFor="let hobbies of student.hobbies">
+        <li>{{hobbies}}</li>
+    </ul>
+</ul>
