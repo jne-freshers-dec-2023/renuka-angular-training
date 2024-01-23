@@ -1,0 +1,17 @@
+#box{
+    width: 200px;
+    height: 200px;
+    margin: 10px 100px;
+}
+button{
+    padding: 1%;
+    margin: 1%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    font-size: 15px;
+
+
+}
