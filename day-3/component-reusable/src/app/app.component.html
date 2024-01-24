@@ -1,0 +1,16 @@
+<p>output property(sending child data to parent)</p>
+<h2>{{data}}</h2>
+<app-output-property (updateDataEvent)="updateData($event)"></app-output-property>
+<p>Input property (sending parent data to child)</p>
+<app-input-property [data]="item"></app-input-property>
+<h2>{{item}}</h2>
+<button (click)="updateChild()">updateChild</button>
+<br/><br/>
+<h2>Template driven</h2>
+<app-template-driven></app-template-driven>
+
+<h2>Reactive form</h2>
+<app-reactive-form></app-reactive-form>
+
+<h2> Form Array</h2>
+<app-form-array></app-form-array>
