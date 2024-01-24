@@ -1,0 +1,21 @@
+<form [formGroup]="loginform" (ngSubmit)="loggedIn()"  >
+    <label>username:</label>
+    <br>
+    <span style="color: red;" *ngIf="username && username.invalid && username.touched">this field is required</span>
+    <br>
+    <input type="text" ngModel name="username"  placeholder="enter username" formControlName="username">
+    <br>
+    <label>email:</label>
+    <br>
+    <span style="color: red;" *ngIf="email && email.invalid && email.touched">enter a valid email</span>
+    <br>
+    <input type="text" ngModel name="email"  placeholder="enter email" formControlName="email">
+    <br>
+    <label>Password:</label>
+    <br>
+    <span style="color: red;" *ngIf="password && password.invalid && password.touched">enter a correct password</span>
+    <br>
+    <input type="password" ngModel name="password" placeholder="enter password" formControlName="password">
+    <br>
+    <button>Login</button>
+</form>

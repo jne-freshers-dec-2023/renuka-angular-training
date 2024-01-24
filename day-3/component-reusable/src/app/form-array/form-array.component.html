@@ -1,0 +1,7 @@
+<form>
+    <input type="text" formControlName="topic" (keyup.enter)="addTopic(topics)" #topics >
+    <ul>
+        <li *ngFor="let topic of refForm.controls" (click)="removeTopic(topic)">
+          {{topic.value}} </li>
+    </ul>
+</form>
