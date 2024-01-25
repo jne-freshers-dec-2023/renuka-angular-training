@@ -1,0 +1,29 @@
+<!-- <p>products works!</p> -->
+<!-- <input type="text" (keyup.enter)="createPost(input)" #input/> -->
+<!-- <ul>
+    <li *ngFor="let product of products">Id:-{{product.pid}} ------ Title:- {{product.name}} ------ Body:-  {{product.price}}</li>
+</ul> -->
+<div class="heading">
+    <h1>Product Details</h1>
+</div>
+<div class="main">
+    <table>
+        <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Taks</th>
+        </tr>
+        <tr *ngFor="let product of products"> 
+            <td>{{product.pid}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td> 
+                <div class="tasks">
+                    <a href="#" style="background-color: red;">Delete</a>
+                    <a href="#" >edit</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
