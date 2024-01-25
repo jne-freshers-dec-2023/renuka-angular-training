@@ -1,0 +1,19 @@
+<h1>counter</h1>
+
+<button (click)="counter('add')">++</button>
+<p>count:  {{count}}</p>
+<button (click)="counter('minus')">--</button>
+<br>
+<br>
+<!-- property binding and interpolation -->
+<h1>property Binding and interpolation</h1>
+<input type="text" name="username" value={{username}} disabled ={{disable}}/>
+<br>
+<br>
+<input type="text"  name="username" [value]=username [disabled]=disable/>
+
+
+<!-- *ngFor -->
+<p *ngFor="let user of users" >name is: {{user}}</p>
+
+<p *ngFor="let userDetail of userDetails">name:{{userDetail.name}},  username:{{userDetail.username}},  email:{{userDetail.email}}</p>
