@@ -1,0 +1,11 @@
+<h2>style-binding </h2>
+
+<div id="box"   [style.backgroundColor]="bgcolor">
+
+</div>
+<h4>Change box color</h4>
+<div>
+    <button #btn_color1 (click)="changeColor(btn_color1.value)" value="orange">orange</button>
+    <button #btn_color2 (click)="changeColor(btn_color2.value)" value="blue">blue</button>
+    <button #btn_color3 (click)="changeColor(btn_color3.value)" value="green">green</button>
+</div>
