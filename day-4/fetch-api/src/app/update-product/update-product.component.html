@@ -1,0 +1,17 @@
+<h1>Update Product</h1>
+<form>
+    
+    <div>
+        <label> Product name</label>
+        <input type="text" [(ngModel)]="product.name"   name = "name" >
+    </div>
+
+    <div >
+        <label>Product price</label>
+        <input type="text"  [(ngModel)]="product.price"
+             name = "price">
+    </div>
+
+    <button  type ="submit" (click)="updateProductById()">Submit</button>
+
+</form>
