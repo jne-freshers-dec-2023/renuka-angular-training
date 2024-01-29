@@ -1,0 +1,13 @@
+<form>    
+    <div >
+        <label> Product name</label>
+        <input type="text" [(ngModel)]="product.name"   name = "name" >
+    </div>
+    <div >
+        <label>Product price</label>
+        <input type="text"  [(ngModel)]="product.price" name = "price">
+    </div>
+    <button  type ="submit" (click)="saveProduct()" routerLink="/products" >Submit</button>
+</form>
+
+
