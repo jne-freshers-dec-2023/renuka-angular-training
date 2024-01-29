@@ -6,7 +6,12 @@
 <div class="heading">
     <h1>Product Details</h1>
 </div>
+
+<div>
+    <button><a routerLink="/product"  routerLinkActive="active">Add</a> </button>
+</div>
 <div class="main">
+    
     <table>
         <tr>
             <th>Product Id</th>
@@ -20,8 +25,8 @@
             <td>{{product.price}}</td>
             <td> 
                 <div class="tasks">
-                    <a href="#" style="background-color: red;">Delete</a>
-                    <a href="#" >edit</a>
+                    <a (click)="deleteProductWithId(product.pid)"  style="background-color: red;">Delete</a>
+                    <a (click)="updateProduct(product.pid)">edit</a>
                 </div>
             </td>
         </tr>
